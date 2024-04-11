@@ -1,5 +1,5 @@
 # monza
-
+A friendly event rounting library to multiple destinations.
 ## Destination Implementation
 - [Opensearch](https://github.com/chinmayrelkar/monza_destination_opensearch)
 
