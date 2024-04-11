@@ -19,13 +19,6 @@ type ServiceID string
 
 type Event struct {
 	Event      string      `json:"event,omitempty"`
-	UserID     string      `json:"user_id,omitempty"`
-	UserEmail  string      `json:"user_email,omitempty"`
-	DocumentID string      `json:"document_id,omitempty"`
-	RequestID  string      `json:"request_id,omitempty"`
-	SessionID  string      `json:"session_id,omitempty"`
-	Measure1   int64       `json:"measure_1,omitempty"`
-	Measure2   int64       `json:"measure_2,omitempty"`
 	Data       interface{} `json:"data,omitempty"`
 	ID         int64       `json:"id,omitempty"`
 	ClientTime time.Time   `json:"client_time,omitempty"`
