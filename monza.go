@@ -53,7 +53,7 @@ func Get(ctx context.Context, config Config) Client {
 		listener: make(chan Event),
 		quit: make(chan interface{}),
 	}
-	c.startListening(ctx)
+	go c.startListening(ctx)
 	instance = c
 	return instance
 }
